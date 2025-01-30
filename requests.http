@@ -1,0 +1,24 @@
+@id = 4
+### POST
+POST http://127.0.0.1:5000/books/new
+Content-Type: application/json
+
+{
+    "title": "1984",
+    "author": "Bob Marley"
+}
+
+### PUT
+PUT http://127.0.0.1:5000/books/{{id}}
+Content-Type: application/json
+
+{
+    "title": "1984",
+    "author": "George Orwell"
+}
+
+### DELETE
+DELETE http://127.0.0.1:5000/books/{{id}}
+
+### GET
+GET http://127.0.0.1:5000/books
